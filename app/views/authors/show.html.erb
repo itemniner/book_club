@@ -1,0 +1,7 @@
+<h1><%= @author.name %></h1>
+<p> Books: </p>
+<% @author.books.each do |book| %>
+<p>- <%= book.title %> </p>
+<% end %>
+<p> Average length authors of books: <%= @author.average_page_of_books %> pages. </p>
+<%= link_to "Back to Books", "/books" %>
